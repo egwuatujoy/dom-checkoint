@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>DOM CHECKPOINT</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <h1>JoyShop</h1>
+      <div class="cart-container cart-sticky">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="cart-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+          />
+        </svg>
+        <div class="cart-amount">0</div>
+      </div>
+    </header>
+    <div class="container">
+      <main class="main-container">
+        <div class="sections-container" id="about">
+          <section class="section-container section-one">
+            <div>
+              <img
+                src="images/pexels-cottonbro-studio-5082570.jpg"
+                alt="a gadget-pic"
+                class="gadget-pic"
+              />
+            </div>
+
+            <div class="gadget-abouts">
+              <h1>iMac 2034</h1>
+              <div class="gadget-details">
+                <p>$3000</p>
+
+                <div>
+                  <i
+                    class="fa-regular fa-heart fa-2xl"
+                    style="color: #da1010"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="cart-buttons">
+                <div class="btn-container">
+                  <button class="gadget-btn">Add to Cart</button>
+                </div>
+                <div class="cart-main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-plus"
+                    id="gadget-plusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="cart-quantity">0</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-minus"
+                    id="gadget-minusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-container section-one">
+            <div>
+              <img
+                src="images/pexels-joel-santos-4741963.jpg"
+                alt="a gadget-pic"
+                class="gadget-pic"
+              />
+            </div>
+
+            <div class="gadget-abouts">
+              <h1>Sony Lens 2023</h1>
+              <div class="gadget-details">
+                <p>$1000</p>
+
+                <div>
+                  <i
+                    class="fa-regular fa-heart fa-2xl"
+                    style="color: #da1010"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="cart-buttons">
+                <div class="btn-container">
+                  <button class="gadget-btn">Add to Cart</button>
+                </div>
+                <div class="cart-main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-plus"
+                    id="gadget-plusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="cart-quantity">0</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-minus"
+                    id="gadget-minusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-container section-one">
+            <div>
+              <img
+                src="images/pexels-ready-made-3921883.jpg"
+                alt="a gadget-pic"
+                class="gadget-pic"
+              />
+            </div>
+
+            <div class="gadget-abouts">
+              <h1>Airpod pro 2023</h1>
+              <div class="gadget-details">
+                <p>$700</p>
+
+                <div>
+                  <i
+                    class="fa-regular fa-heart fa-2xl"
+                    style="color: #da1010"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="cart-buttons">
+                <div class="btn-container">
+                  <button class="gadget-btn">Add to Cart</button>
+                </div>
+                <div class="cart-main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-plus"
+                    id="gadget-plusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="cart-quantity">0</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-minus"
+                    id="gadget-minusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-container section-one">
+            <div>
+              <img
+                src="images/pexels-sound-on-3394650.jpg"
+                alt="a gadget-pic"
+                class="gadget-pic"
+              />
+            </div>
+
+            <div class="gadget-abouts">
+              <h1>Apple Headphone</h1>
+              <div class="gadget-details">
+                <p>$500</p>
+
+                <div>
+                  <i
+                    class="fa-regular fa-heart fa-2xl"
+                    style="color: #da1010"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="cart-buttons">
+                <div class="btn-container">
+                  <button class="gadget-btn">Add to Cart</button>
+                </div>
+                <div class="cart-main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-plus"
+                    id="gadget-plusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="cart-quantity">0</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-minus"
+                    id="gadget-minusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="sections-container" id="about">
+          <section class="section-container section-one">
+            <div>
+              <img
+                src="images/pexels-tuur-tisseghem-812264.jpg"
+                alt="a gadget-pic"
+                class="gadget-pic"
+              />
+            </div>
+
+            <div class="gadget-abouts">
+              <h1>Mac Air 2014</h1>
+              <div class="gadget-details">
+                <p>$800</p>
+
+                <div>
+                  <i
+                    class="fa-regular fa-heart fa-2xl"
+                    style="color: #da1010"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="cart-buttons">
+                <div class="btn-container">
+                  <button class="gadget-btn">Add to Cart</button>
+                </div>
+                <div class="cart-main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-plus"
+                    id="gadget-plusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="cart-quantity">0</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-minus"
+                    id="gadget-minusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-container section-one">
+            <div>
+              <img
+                src="images/pexels-klim-musalimov-4476638.jpg"
+                alt="a gadget-pic"
+                class="gadget-pic"
+              />
+            </div>
+
+            <div class="gadget-abouts">
+              <h1>Apple Wireless Mouse</h1>
+              <div class="gadget-details">
+                <p>$400</p>
+
+                <div>
+                  <i
+                    class="fa-regular fa-heart fa-2xl"
+                    style="color: #da1010"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="cart-buttons">
+                <div class="btn-container">
+                  <button class="gadget-btn">Add to Cart</button>
+                </div>
+                <div class="cart-main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-plus"
+                    id="gadget-plusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="cart-quantity">0</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-minus"
+                    id="gadget-minusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-container section-one">
+            <div>
+              <img
+                src="images/pexels-olena-bohovyk-1772123.jpg"
+                alt="a gadget-pic"
+                class="gadget-pic"
+              />
+            </div>
+
+            <div class="gadget-abouts">
+              <h1>Apple Keyboard</h1>
+              <div class="gadget-details">
+                <p>$1500</p>
+
+                <div>
+                  <i
+                    class="fa-regular fa-heart fa-2xl"
+                    style="color: #da1010"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="cart-buttons">
+                <div class="btn-container">
+                  <button class="gadget-btn">Add to Cart</button>
+                </div>
+                <div class="cart-main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-plus"
+                    id="gadget-plusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="cart-quantity">0</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-minus"
+                    id="gadget-minusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-container section-one">
+            <div>
+              <img
+                src="images/pexels-torsten-dettlaff-437037.jpg"
+                alt="a gadget-pic"
+                class="gadget-pic"
+              />
+            </div>
+
+            <div class="gadget-abouts">
+              <h1>Apple Watch</h1>
+              <div class="gadget-details">
+                <p>$100</p>
+
+                <div>
+                  <i
+                    class="fa-regular fa-heart fa-2xl"
+                    style="color: #da1010"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="cart-buttons">
+                <div class="btn-container">
+                  <button class="gadget-btn">Add to Cart</button>
+                </div>
+                <div class="cart-main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-plus"
+                    id="gadget-plusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="cart-quantity">0</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="gadget-minus"
+                    id="gadget-minusd"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <section class="cartWindow">
+        <h1>Shopping Cart</h1>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
